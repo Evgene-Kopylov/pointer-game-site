@@ -1,100 +1,137 @@
 body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	background-color: #1F1F1F;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #1F1F1F;
 }
 
 header {
-	background-color: #242424;
-	color: #ccc;
-	padding: 20px;
+  background-color: #242424;
+  color: #ccc;
+  padding: 20px;
 }
 
 h1 {
-	margin: 0;
-	font-size: 36px;
+  margin: 0;
+  font-size: 36px;
 }
 
 nav {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 
 ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 li {
-	padding: 0 10px;
+  padding: 0 10px;
 }
 
 a {
-	color: #fff;
-	text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 main {
-	padding: 20px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	max-width: 900px;
-	margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: auto;
 }
 
 section {
-	background-color: #212531;
-	color: #ccc;
-	width: 400px;
-	padding: 20px;
-	margin-bottom: 20px;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 10px;
+  background-color: #212531;
+  color: #ccc;
+  width: 400px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
 }
 
 h2 {
-	margin-top: 0;
+  margin-top: 0;
 }
 
 .game {
-	margin-top: 20px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
 }
 
-img {
-	max-width: 100%;
+.game img {
+  display: block;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: orange;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.game:hover .overlay {
+  opacity: 0.3;
+}
+
+.game a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(51, 51, 51, 0.8);
+  color: #fff;
+  font-size: 24px;
+  padding: 20px 40px;
+  text-decoration: none;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.game:hover a {
+  opacity: 1;
 }
 
 h3 {
-	margin: 10px 0 0;
+  margin: 10px 0 0;
 }
 
 p {
-	margin: 10px 0;
+  margin: 10px 0;
 }
 
 a {
-	display: inline-block;
-	background-color: #333;
-	color: #fff;
-	padding: 10px 20px;
-	text-decoration: none;
-	border-radius: 5px;
-	margin-top: 10px;
-	/* margin-left: 150px; */
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
 a:hover {
-	background-color: #555;
+  background-color: #555;
 }
 
 footer {
-	color: #ccc;
+  color: #ccc;
 }
