@@ -49,9 +49,7 @@ a:hover {
 .project-info {
   display: none;
   position: absolute;
-  top: 150px;
-  width: 850px;
-  height: 850px;
+  top: 180px;
   background-color: #1C2127;
   padding: 20px;
   z-index: 999;
@@ -60,6 +58,10 @@ a:hover {
 
 .project-btn:hover + .project-info {
   display: block;
+}
+
+p.text-end {
+  text-align: center;
 }
 
 main {
