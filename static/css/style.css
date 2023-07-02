@@ -42,10 +42,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 .project-info {
   display: none;
   position: absolute;
