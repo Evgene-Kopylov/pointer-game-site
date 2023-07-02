@@ -25,7 +25,7 @@ nav {
   margin-top: 20px;
 }
 
-ul {
+ul.navigation {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -44,6 +44,22 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.project-info {
+  display: none;
+  position: absolute;
+  top: 150px;
+  width: 850px;
+  height: 850px;
+  background-color: #1C2127;
+  padding: 20px;
+  z-index: 999;
+  font-size: 24px;
+}
+
+.project-btn:hover + .project-info {
+  display: block;
 }
 
 main {
