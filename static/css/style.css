@@ -42,6 +42,15 @@ a {
   text-decoration: none;
 }
 
+p a:hover {
+  background-color: transparent;
+  color: rgb(12, 159, 54);
+}
+
+div.news {
+  padding-bottom: 10px;
+}
+
 .project-info {
   display: none;
   position: absolute;
