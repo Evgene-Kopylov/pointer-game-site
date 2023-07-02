@@ -8,12 +8,16 @@ header {
   background-color: #242424;
   color: #ccc;
   padding: 20px;
-  max-width: 900px;
+
+}
+
+header div {
+    max-width: 900px;
   margin: auto;
 }
 
-header h1 {
-  margin: 0;
+header div h1 {
+  margin: 10px;
   font-size: 36px;
 }
 
@@ -60,6 +64,13 @@ section {
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+  section {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 h2 {
